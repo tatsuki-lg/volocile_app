@@ -1,0 +1,176 @@
+/* @media only screen and (max-width: 767px) {
+  body {
+    background-image: url(./images/volocile_200801_60.jpg);
+  }
+} */
+
+/*スマホ画面でハンバーガーメニューの形にする*/
+@media screen and (max-width: 812px) {
+  #wrapper nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    padding-top: 50px;
+    background: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  #wrapper nav ul li {
+    display: block;
+    padding: 45px 20px;
+    font-size: 30px;
+  }
+  .logo-main {
+    text-align: center;
+    display: block;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+  .menu {
+    margin-top: 50px;
+  }
+  .logo {
+    display: none;
+  }
+  #wrapper nav ul li a {
+    text-decoration: none;
+    color: #000;
+    float: left;
+    margin: 0;
+  }
+  .font {
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 120px;
+  }
+  .font h6 {
+    margin-left: 20px;
+  }
+  .font .fab {
+    margin: 0 20px;
+  }
+  .logo-i {
+    display: flow-root;
+    text-align: center;
+    color: #fff;
+    /* margin-top: 44vh; */
+  }
+  /* .logo-i h3 {
+    display: table;
+  } */
+  #wrapper .btn-gnavi {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    z-index: 3;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  #wrapper .btn-gnavi span {
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+  }
+
+  #wrapper .btn-gnavi span:nth-child(1) {
+    top: 0;
+  }
+
+  #wrapper .btn-gnavi span:nth-child(2) {
+    top: 10px;
+  }
+
+  #wrapper .btn-gnavi span:nth-child(3) {
+    top: 20px;
+  }
+
+  #wrapper .btn-gnavi.open {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  #wrapper .btn-gnavi.open span {
+    background: #000;
+  }
+
+  #wrapper .btn-gnavi.open span {
+    width: 24px;
+  }
+  #wrapper .contents section p {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #000;
+    text-shadow: 0 0 6px #666;
+  }
+
+  #wrapper .contents section:nth-child(odd) p {
+    left: 10%;
+  }
+
+  #wrapper .contents section:nth-child(even) p {
+    right: 10%;
+  }
+  .center {
+    vertical-align: middle;
+    text-align: center;
+  }
+  .string {
+    color: #ffffff;
+  }
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .btn-on {
+    width: 100%;
+  }
+  .btn-on-1 {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 6px 40px;
+    background-color: #000;
+    border-radius: 27px;
+  }
+  .header-on {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .img-ktg {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 1px;
+  }
+  .category {
+    display: table;
+  }
+  .category li {
+    display: table-cell;
+  }
+  .category img {
+    width: 100%;
+  }
+}
