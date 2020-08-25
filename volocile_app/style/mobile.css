@@ -118,7 +118,7 @@
   }
 
   .menu {
-    position: relative;
+    position: static;
     text-align: center;
     width: 100%;
     margin: auto;
@@ -239,6 +239,7 @@
     margin-left: 0;
   }
 
+  /* online storeのボタン */
   .btn-on {
     width: 100%;
   }
@@ -246,7 +247,7 @@
   .btn-on-1 {
     margin-top: 60px;
     margin-bottom: 50px;
-    padding: 6px 40px;
+    padding: 6px 30px;
     background-color: #000;
     border-radius: 27px;
   }
@@ -265,8 +266,10 @@
     height: auto;
     margin: auto;
     border: 1px;
+    width: 100%;
   }
 
+  /* womenとmenの画像 */
   .category {
     display: table;
   }
@@ -277,5 +280,48 @@
 
   .category img {
     width: 100%;
+  }
+
+  /* タイトルの横線 */
+  .title-border {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-border:before,
+  .title-border:after {
+    border-top: 2px solid;
+    content: "";
+    flex-grow: 1;
+  }
+
+  .title-border:before {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: -6px;
+  }
+
+  .title-border:after {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: -6px;
+  }
+
+  /* SPRING $ SUMMERのテキスト */
+  .summer {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .summer div.text-summer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(50% - 25px);
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
   }
 }
