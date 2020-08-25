@@ -10,40 +10,53 @@
   background-attachment: fixed;
   background-size: cover;
 }
+
 .logo-main {
   display: none;
 }
+
 .menu {
-  position: relative;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   width: 100%;
+  transition: .3s;
   margin: auto;
 }
+
 #global-navi {
   position: fixed;
   top: 0;
   right: 0px;
   width: 100%;
 }
+
 #wrapper nav ul li {
   display: inline-block;
   font-size: 27px;
   padding: 30px 40px 0 60px;
 }
+
 #wrapper nav ul li a {
   color: #fff;
 }
+
 .logo {
   display: inline-block;
   color: #fff;
 }
+
 .logo h3 {
   display: table;
   font-size: 20px;
 }
+
 .font {
   display: none;
 }
+
 .logo-i {
   display: none;
 }
@@ -53,13 +66,16 @@
   margin: 0 auto;
   padding-top: 100px;
 }
+
 .content p {
   margin-bottom: 40px;
 }
+
 .center {
   display: block;
   text-align: center;
 }
+
 .string {
   color: #ffffff;
 }

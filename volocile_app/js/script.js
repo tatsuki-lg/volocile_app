@@ -1,3 +1,19 @@
+$(function () {
+    var $win = $(window),
+        $header = $('.menu'),
+        headerHeight = $header.outerHeight(),
+        startPos = 0;
+
+    $win.on('load scroll', function () {
+        var value = $(this).scrollTop();
+        if (value > startPos && value > headerHeight) {
+            $header.css('top', '-' + headerHeight + 'px');
+        } else {
+            $header.css('top', '0');
+        }
+        startPos = value;
+    });
+});
 jQuery(function ($) {
     $('.bg-slider').bgSwitcher({
         images: ['./images/volocile_200801_60.jpg', './images/volocile_200811_0.jpg', './images/IMG_6207.JPG'], // 切り替える背景画像を指定
