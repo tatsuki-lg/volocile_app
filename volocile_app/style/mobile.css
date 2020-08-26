@@ -257,6 +257,11 @@
     margin-bottom: 60px;
   }
 
+  .header-collect {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
   .img-ktg {
     top: 0;
     bottom: 0;
@@ -270,16 +275,21 @@
   }
 
   /* womenとmenの画像 */
-  .category {
+  .item {
     display: table;
+    position: relative;
   }
 
-  .category li {
+  .item li {
     display: table-cell;
+    height: auto;
+    width: 50%;
+    /* border: solid 1px rgb(162 162 162); */
   }
 
-  .category img {
+  .item img {
     width: 100%;
+    height: auto;
   }
 
   /* タイトルの横線 */
@@ -308,12 +318,11 @@
   }
 
   /* SPRING $ SUMMERのテキスト */
-  .summer {
+  .season {
     position: relative;
-    margin-bottom: 40px;
   }
 
-  .summer div.text-summer {
+  .season div.text-season {
     position: absolute;
     width: 100%;
     left: 0;
@@ -323,5 +332,31 @@
     font-weight: bold;
     font-size: 25px;
     line-height: 50px;
+  }
+
+  .season div.text-season .link-season {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  /* women'sのテキスト */
+  .item ul li a.link-women {
+    color: rgb(154, 154, 154);
+    text-decoration: none;
+    position: absolute;
+    left: 19%;
+    top: 60%;
+    font-size: 21px;
+  }
+
+  /* men'sのテキスト */
+  .item ul li a.link-men {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    left: 67%;
+    top: 60%;
+    font-size: 21px;
   }
 }
